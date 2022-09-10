@@ -5,7 +5,7 @@ import asyncio
 import json, time
 import datetime
 from dotenv import load_dotenv
-
+import json
 import discord
 from discord.ext import bridge
 
@@ -31,7 +31,8 @@ async def on_member_join(member):
             fp.truncate()
 
 
-token = "OTU3NDg5Njg1MjYzOTYyMTQz.GMLQlE.504qUwbs4_QX9CoPLCak44uc8rGHUDey5nwDt8"
+with open(r"C:\Users\jacky\Documents\discord\ROK\config\bot.json") as fp:
+    token = json.load(fp)["token"]
 
 bot.load_extension("command.verification")
 bot.load_extension("command.members_profile")

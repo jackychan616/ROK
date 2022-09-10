@@ -33,8 +33,8 @@ async def on_message(message):
         path = [data[i] for i in data if str(message.guild.id) != i]
         webhook = DiscordWebhook(url=path,username=author.name,avatar_url=image,content=msg) 
         response = webhook.execute()    
+    
 
 
 
-
-bot.run("ODMzODk1NDI4OTM2MzAyNjYy.GCiTwQ.mefArrlKgdJThfK-TnZJRI3gDKZwBxGge-Crqw")
+bot.run("ODMzODk1NDI4OTM2MzAyNjYy.GLEcPH.w5WcnYGU_GCEicqMV4qNP-J3Y35IfSV16A8LIY")
